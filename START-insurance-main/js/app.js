@@ -72,4 +72,8 @@ HTMLUI.prototype.displayError = function(message) {
 
     form.insertBefore(div, document.querySelector('.form-group'));
 
+    // remove the error
+    setTimeout(function() {
+        document.querySelector('.error').remove();
+    },3000);
 }
